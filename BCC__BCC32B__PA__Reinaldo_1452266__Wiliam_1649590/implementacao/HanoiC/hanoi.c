@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 //Função recursiva para solucionar o problema da torre de hanoi
 void hanoi(int n, char orig,char dest,char aux){
     if (n == 1){
@@ -12,9 +13,14 @@ void hanoi(int n, char orig,char dest,char aux){
 
 int main(){
     int discos;
-    printf("digite a quantidade de discos:");
-    scanf("%d", &discos);
-    printf("\n");
+
+        printf("informe a quantidade de discos: ");
+            scanf("%d", &discos);
+
+        printf("\n");
+
     hanoi(discos,'A','B','C');
-    return 0;
+
+return 0;
+
 }

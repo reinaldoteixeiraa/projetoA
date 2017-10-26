@@ -18,8 +18,11 @@ int main(){
             scanf("%d", &discos);
 
         printf("\n");
+// 1 origem
+// 3 destino
+// 2 auxiliar
 
-    hanoi(discos,1,2,3);
+    hanoi(discos,1,3,2);
 
 return 0;
 

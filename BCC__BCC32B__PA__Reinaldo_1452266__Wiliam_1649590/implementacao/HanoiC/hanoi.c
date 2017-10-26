@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 //Função recursiva para solucionar o problema da torre de hanoi
-void hanoi(int n, char orig,char dest,char aux){
+void hanoi(int n, int orig,int dest,int aux){
     if (n == 1){
-        printf("Move Disco 1 da torre %c para a torre %c\n",orig,dest);
+        printf("Move Disco 1 da torre %d para a torre %d\n",orig,dest);
         return;
     }
     hanoi(n-1,orig,aux,dest);
-    printf("Move Disco %d da torre %c para a torre %c\n", n,dest,orig);
+    printf("Move Disco %d da torre %d para a torre %d\n", n,dest,orig);
     hanoi(n-1,aux,dest,orig);
 }
 
@@ -19,7 +19,7 @@ int main(){
 
         printf("\n");
 
-    hanoi(discos,'A','B','C');
+    hanoi(discos,1,2,3);
 
 return 0;
 
